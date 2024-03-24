@@ -52,7 +52,7 @@ def get_conversation_response(req: func.HttpRequest) -> func.HttpResponse:
             "choices": [{"messages": messages}],
         }
 
-        return func.HttpResponse(json.dumps(response_obj), status_code=200)
+        return func.HttpResponse(json.dumps(response_obj), status_code=200, mimetype="application/json")
 
     except Exception as e:
         logging.exception("Exception in /api/GetConversationResponse")
