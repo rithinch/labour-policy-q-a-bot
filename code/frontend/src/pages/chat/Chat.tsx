@@ -17,7 +17,7 @@ import rehypeRaw from "rehype-raw";
 import { v4 as uuidv4 } from "uuid";
 
 import styles from "./Chat.module.css";
-import Azure from "../../assets/Azure.svg";
+import LabourLogo from "../../assets/labour_logo.png";
 
 import {
   ChatMessage,
@@ -268,10 +268,10 @@ const Chat = () => {
         <div className={`${styles.chatContainer} ${styles.MobileChatContainer}`}>
           {!lastQuestionRef.current ? (
             <Stack className={styles.chatEmptyState}>
-              <img src={Azure} className={styles.chatIcon} aria-hidden="true" />
-              <h1 className={styles.chatEmptyStateTitle}>Start chatting</h1>
+              <img src={LabourLogo} className={styles.chatIcon} aria-hidden="true" />
+              <h1 className={styles.chatEmptyStateTitle}>Labour Policy Q&A Bot</h1>
               <h2 className={styles.chatEmptyStateSubtitle}>
-                This chatbot is configured to answer your questions
+                This bot is trained to answer questions on the labour press releases and manifesto.
               </h2>
             </Stack>
           ) : (
