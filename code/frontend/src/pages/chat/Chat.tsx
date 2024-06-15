@@ -269,9 +269,9 @@ const Chat = () => {
           {!lastQuestionRef.current ? (
             <Stack className={styles.chatEmptyState}>
               <img src={LabourLogo} className={styles.chatIcon} aria-hidden="true" />
-              <h1 className={styles.chatEmptyStateTitle}>Labour Policy Q&A Bot</h1>
+              <h1 className={styles.chatEmptyStateTitle}>Labour Policy Bot</h1>
               <h2 className={styles.chatEmptyStateSubtitle}>
-                This bot is trained to answer questions on the labour press releases and manifesto.
+                This bot is trained to answer questions on the latest labour manifesto and press releases.
               </h2>
             </Stack>
           ) : (
